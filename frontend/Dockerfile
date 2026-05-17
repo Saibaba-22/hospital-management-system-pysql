@@ -1,6 +1,6 @@
 FROM nginx:1.25-alpine
 
-COPY src/ /usr/share/nginx/html/
+COPY index.html /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 RUN chown -R nginx:nginx /usr/share/nginx/html
